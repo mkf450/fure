@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis:800');
+
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+@import url('https://fonts.googleapis.com/css?family=Baloo+Thambi');
+
+@import url('https://fonts.googleapis.com/css?family=Overlock:900');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(35deg, hsl(216, 100%, 80%) 30%, hsl(278, 85%, 67%) 70%);
+  background-attachment: fixed;
+}
+
+.birthday {
+   height: 100vh;
+}
+
+@media (max-width: 768px) {
+  .birthday {
+    display: none;
+  }
+}
+
+.letter {
+  margin: 5% 0 0 0;
+  width: 500px;
+  height: 600px;
+  background: hsl(0, 0%, 100%);
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+  transform: rotate(8deg);
+}
+
+.card {
+  position: relative;
+  margin: 0;
+  padding: 40px 20px;
+  width: 500px;
+  height: 600px;
+  background: url(https://cdn.inspirationhut.net/wp-content/uploads/2014/09/cream-paper-subtle-pattern.jpg);
+  background-size: cover;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5),
+              -5px -5px 15px rgba(0, 0, 0, 0.3);
+  transform: rotate(-8deg);
+}
+
+section {
+  position: absolute;
+  margin: 35% 15%;
+}
+
+.ribbon {
+  position: absolute;
+  top: 0;
+  left: 5%;
+  width: 30px;
+  height: 600px;
+  background: rgba(213, 100, 242, 0.7);
+  z-index: 1;
+}
+
+.knot {
+  position: absolute;
+  width: 25px;
+  height: 90px;
+  background: rgba(213, 100, 242, 0.9);
+  border-radius: 10%;
+}
+
+.knot-1 {
+  top: 5%;
+  left: 6%;
+  transform: rotate(-40deg);
+  z-index: 2;
+}
+
+.knot-2 {
+  top: 5%;
+  left: 5%;
+  transform: rotate(40deg);
+  z-index: 2;
+}
+
+.top-border {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 150px;
+  border-top: 2px solid hsl(216, 100%, 80%);
+  border-radius: 10%;
+}
+
+.right-border {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  height: 100px;
+  border-right: 2px solid hsl(216, 100%, 80%);
+  border-radius: 10%;
+}
+
+/* ===========
+    Card Text
+   =========== */
+
+.quote {
+  font-family: 'Overlock', cursive;
+  font-size: 16px;
+  letter-spacing: 1px;
+  line-height: 1.5rem;
+  color: rgba(0, 0, 0, 0.5);
+  padding-bottom: 1.2rem;
+}
+
+h4 {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: rgb(0, 0, 0);
+  opacity: 0.4;
+}
+
+.lasagna {
+  position: absolute;
+  top: -40%;
+  left: -10%;
+  transform: rotate(-30deg);
+}
+
+.meme {
+  position: absolute;
+  top: -40%;
+  right: -10%;
+  transform: rotate(30deg);
+}
+
+.oi {
+  position: absolute;
+  bottom: -20%;
+  left: -10%;
+  transform: rotate(30deg);
+}
+
+.ylyl {
+  position: absolute;
+  bottom: -14%;
+  right: -14%;
+  transform: rotate(-30deg);
+}
+
+/* ========
+   cake
+======== */
+
+.cake {
+    position: absolute;
+    width: 250px;
+    height: 200px;
+    top: 50%;
+    left: 50%;
+    margin-left: -125px;
+}
+
+@media (min-width: 1440px) {
+  .cake {
+    margin-top: -150px;
+  }
+}
+
+.plate {
+    width: 270px;
+    height: 110px;
+    position: absolute;
+    bottom: -10px;
+    left: -10px;
+    background-color: #f1f1f1;
+    border-radius: 50%;
+    box-shadow:
+        0 2px 0 darken(#ccc, 10%),
+        0 4px 0 darken(#ccc, 10%),
+        0 5px 40px rgba(black, 0.5);
+}
+
+.cake > * {
+    position: absolute;
+}
+
+.layer {
+    position: absolute;
+    display: block;
+    width: 250px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #553c13;
+    box-shadow:
+        0 2px 0px lighten(#553c13, 5%),
+        0 4px 0px darken(#553c13, 8.2%),
+        0 6px 0px darken(#553c13, 8.4%),
+        0 8px 0px darken(#553c13, 8.6%),
+        0 10px 0px darken(#553c13, 8.8%),
+        0 12px 0px darken(#553c13, 9%),
+        0 14px 0px darken(#553c13, 9.2%),
+        0 16px 0px darken(#553c13, 9.4%),
+        0 18px 0px darken(#553c13, 9.6%),
+        0 20px 0px darken(#553c13, 9.8%),
+        0 22px 0px darken(#553c13, 10%),
+        0 24px 0px darken(#553c13, 10.2%),
+        0 26px 0px darken(#553c13, 10.4%),
+        0 28px 0px darken(#553c13, 10.6%),
+        0 30px 0px darken(#553c13, 10.8%);
+}
+
+.layer-top { top: 0px; }
+.layer-middle { top: 33px; }
+.layer-bottom { top: 66px; }
+
+.icing {
+    top: 2px;
+    left: 5px;
+    background-color: #f0e4d0;
+    width: 240px;
+    height: 90px;
+    border-radius: 50%;
+    &:before {
+        content: "";
+        position: absolute;
+        top: 4px;
+        right: 5px;
+        bottom: 6px;
+        left: 5px;
+        background-color: lighten(#f0e4d0, 3%);
+        box-shadow:
+            0 0 4px lighten(#f0e4d0, 5%),
+            0 0 4px lighten(#f0e4d0, 5%),
+            0 0 4px lighten(#f0e4d0, 5%);
+        border-radius: 50%;
+        z-index: 1;
+    }
+}
+
+.drip {
+    display: block;
+    width: 50px;
+    height: 60px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    background-color: #f0e4d0;
+}
+
+.drip1 {
+    top: 53px;
+    left: 5px;
+    transform: skewY(15deg);
+    height: 48px;
+    width: 40px;
+}
+
+.drip2 {
+    top: 69px;
+    left: 181px;
+    transform: skewY(-15deg);
+}
+
+.drip3 {
+    top: 54px;
+    left: 90px;
+    width: 80px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+.candle {
+    background-color: #be63f2;
+    width: 16px;
+    height: 50px;
+    border-radius: 8px / 4px;
+    top: -20px;
+    left: 50%;
+    margin-left: -8px;
+    z-index: 10;
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 16px;
+        height: 8px;
+        border-radius: 50%;
+        background-color: lighten(#7B020B, 10%);
+    }
+}
+
+.flame {
+    position: absolute;
+    background-color: orange;
+    width: 15px;
+    height: 35px;
+    border-radius: 10px 10px 10px 10px / 25px 25px 10px 10px;
+    top: -34px;
+    left: 50%;
+    margin-left: -7.5px;
+    z-index: 10;
+    box-shadow:
+        0 0 10px rgba(orange, 0.5),
+        0 0 20px rgba(orange, 0.5),
+        0 0 60px rgba(orange, 0.5),
+        0 0 80px rgba(orange, 0.5);
+    transform-origin: 50% 90%;
+    animation: flicker 1s ease-in-out alternate infinite;
+}
+
+@keyframes flicker {
+    0% {
+        transform: skewX(5deg);
+        box-shadow:
+            0 0 10px rgba(orange, 0.2),
+            0 0 20px rgba(orange, 0.2),
+            0 0 60px rgba(orange, 0.2),
+            0 0 80px rgba(orange, 0.2) }
+    25% {
+        transform: skewX(-5deg);
+        box-shadow:
+            0 0 10px rgba(orange, 0.5),
+            0 0 20px rgba(orange, 0.5),
+            0 0 60px rgba(orange, 0.5),
+            0 0 80px rgba(orange, 0.5) }
+    50% {
+        transform: skewX(10deg);
+        box-shadow:
+            0 0 10px rgba(orange, 0.3),
+            0 0 20px rgba(orange, 0.3),
+            0 0 60px rgba(orange, 0.3),
+            0 0 80px rgba(orange, 0.3) }
+    75% {
+        transform: skewX(-10deg);
+        box-shadow:
+            0 0 10px rgba(orange, 0.4),
+            0 0 20px rgba(orange, 0.4),
+            0 0 60px rgba(orange, 0.4),
+            0 0 80px rgba(orange, 0.4) }
+    100% {
+        transform: skewX(5deg);
+        box-shadow:
+            0 0 10px rgba(orange, 0.5),
+            0 0 20px rgba(orange, 0.5),
+            0 0 60px rgba(orange, 0.5),
+            0 0 80px rgba(orange, 0.5) }
+}
